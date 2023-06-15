@@ -3,20 +3,16 @@
 :root {
     --header-height: 3rem;
     /*colors */
-    --hue-color: 0 ; /*pink*/
-    /* --pink-color: 	hsl(0, 58%, 74%); */
-    
     --pink-color: 	hsl(343, 55%, 74%);
-    
-    --pink-color-alt: hsl(0, 38%, 65%);
-    --pink-color-darker: hsl(0, 24%, 53%);
-    --pink-color-lighter: hsl(0, 92%, 85%);
-    --title-color: hsl(0, 8%, 15%);
-    --text-color: hsl(0, 8%, 45%);
-    --text-color-light: hsl(0, 8%, 65%);
-    --input-color: hsl(0, 70%, 96%);
-    --dark-color: hsl(0, 60%, 99%, 0.1);
-    --body-color: hsl(0, 60%, 99%);
+    --pink-color-alt: hsl(343, 38%, 65%);
+    --pink-color-darker: hsl(343, 24%, 53%);
+    --pink-color-lighter: hsl(343, 92%, 85%);
+    --title-color: hsl(343, 8%, 15%);
+    --text-color: hsl(343, 8%, 45%);
+    --text-color-light: hsl(343, 8%, 65%);
+    --input-color: hsl(343, 70%, 96%);
+    --dark-color: hsl(343, 60%, 99%, 0.1);
+    --body-color: hsl(343, 60%, 99%);
     --container-color: #fff;
 
     /*font size */  /*5rem = 8px, 1rem =16px, 1.5rem = 24px */
@@ -458,14 +454,12 @@ img {
 input,textarea {
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid #ffd5d5;
+    border: 2px solid var(--pink-color-lighter);
     border-radius: 5px;
+    background-color: var(--container-color);
+    color: var(--title-color);
     resize: none;
     width: 450px;
-}
-
-textarea:focus {
-    border-color: var(--pink-color-darker);
 }
 
 .submit-button {
