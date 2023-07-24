@@ -1,89 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Icons (iconscout )-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <!-- FavIcon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/icons8-favorite-office-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/icons8-favorite-office-16.png">
-    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/icons8-favorite-office-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/icons8-favorite-office-16.png"
+    />
+
     <!--Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Carla</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header" id="header">
-        <nav class="nav container">
-         <a href="#" class="logo">Carla</a>
-         
-         <button class="hamburger">
-          
+      <nav class="nav container">
+        <a href="#" class="logo">Carla</a>
+
+        <button class="hamburger">
           <i class="uil uil-bars nav-hamburger" id="nav-hamburger"></i>
           <i class="uil uil-times nav-close hidden" id="nav-close"></i>
         </button>
-         <div class="nav-menu" id="nav-menu">
-         
-            <ul class="nav-list grid">
-              <li class="nav-item">
-                <a href="#home" class="nav-link active-link"> 
-                    <i class="uil uil-estate nav-icon"></i> Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link"> 
-                    <i class="uil uil-user nav-icon"></i> About
-                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#skills" class="nav-link"> 
-                    <i class="uil uil-file-alt nav-icon"></i> Skills
-                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link"> 
-                    <i class="uil uil-folder nav-icon"></i> Projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link"> 
-                    <i class="uil uil-message nav-icon"></i> Contact
-                 </a>
-              </li>
-            </ul>
-         </div>
-        </nav>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active-link">
+                <i class="uil uil-estate nav-icon"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="uil uil-user nav-icon"></i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">
+                <i class="uil uil-file-alt nav-icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">
+                <i class="uil uil-folder nav-icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <i class="uil uil-message nav-icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- Home -->
     <main class="main">
-       <section class="home section" id="home">
+      <section class="home section" id="home">
         <div class="home-container container grid">
-          <div class="home-content flex"> 
+          <div class="home-content flex">
             <div class="home-img">
-              <svg class="home-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                class="home-blob anim"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <defs>
-                  <linearGradient id="grad1"x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color:hsl(343, 55%, 74%);stop-opacity:1" />
-                    <stop offset="90%" style="stop-color:hsl(343, 38%, 65%);stop-opacity:1" />
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop
+                      offset="0%"
+                      style="stop-color: hsl(343, 55%, 74%); stop-opacity: 1"
+                    />
+                    <stop
+                      offset="90%"
+                      style="stop-color: hsl(343, 38%, 65%); stop-opacity: 1"
+                    />
                   </linearGradient>
                 </defs>
-              <path fill="url(#grad1)" d="M54.4,-63.2C69.6,-52.1,80.3,-34.1,81.9,-15.8C83.4,2.4,75.9,20.9,65.5,36.8C55.1,52.6,42,65.9,25.2,74.2C8.4,82.5,-12,85.8,-30,80.2C-47.9,74.6,-63.4,60.1,-73.5,42.5C-83.7,24.9,-88.5,4.2,-82.9,-12.4C-77.3,-28.9,-61.2,-41.3,-45.6,-52.3C-30.1,-63.3,-15,-72.9,2.3,-75.6C19.6,-78.4,39.3,-74.3,54.4,-63.2Z" transform="translate(100 100)" />
-             <image class="home-blob-img" height="150px" x="32" y="32" clip-path="inset(0% round 45px)" href="images/home.png" />
+                <path
+                  fill="url(#grad1)"
+                  d="M54.4,-63.2C69.6,-52.1,80.3,-34.1,81.9,-15.8C83.4,2.4,75.9,20.9,65.5,36.8C55.1,52.6,42,65.9,25.2,74.2C8.4,82.5,-12,85.8,-30,80.2C-47.9,74.6,-63.4,60.1,-73.5,42.5C-83.7,24.9,-88.5,4.2,-82.9,-12.4C-77.3,-28.9,-61.2,-41.3,-45.6,-52.3C-30.1,-63.3,-15,-72.9,2.3,-75.6C19.6,-78.4,39.3,-74.3,54.4,-63.2Z"
+                  transform="translate(100 100)"
+                />
+                <image
+                  class="home-blob-img"
+                  height="150px"
+                  x="32"
+                  y="32"
+                  clip-path="inset(0% round 45px)"
+                  href="images/home.png"
+                />
               </svg>
             </div>
             <div class="home-data">
               <h1 class="home-title">
-                
                 Hey, I'm <span class="header-pink">Carla</span>
               </h1>
-              <h3 class="home-subtitle">
-                A Front-End Developer
-              </h3>
+              <h3 class="home-subtitle">A Front-End Developer</h3>
               <p class="home-description">
-                passionate about creating interactive applications and experiences on the web.
+                passionate about creating interactive applications and
+                experiences on the web.
               </p>
               <a href="#contact" class="button button-flex">
                 Contact Me <i class="uil uil-message button-icon"></i>
@@ -99,112 +129,170 @@
             </a>
           </div>
         </div>
-
-       </section>
-       <!-- About -->
-       <section class="about section" id="about">
+      </section>
+      <!-- About -->
+      <section class="about section" id="about">
         <h2 class="section-title">About <span class="header-pink">Me</span></h2>
         <div class="about-container container grid">
-          <img src="images/about.svg" alt="about" class="about-img">
+          <img src="images/about.svg" alt="about" class="about-img" />
           <div class="about-data">
-            <p class="about-description">My name is Carla Cheikh and I am a front-end developer based in Lebanon , with deep knowledge
-              in Html, Css and Javascript.
-              Highly interested in working with a creative team, would like to create something new.
+            <p class="about-description">
+              My name is Carla Cheikh, and I am a front-end developer based in
+              Lebanon with deep knowledge in HTML, CSS and JavaScript. I am
+              highly interested in working with a creative team and would love
+              to create something new.
             </p>
             <div class="about-button">
-              <a download="" href="images/CarlaCheikh.pdf" class="button button-flex">
+              <a
+                download=""
+                href="images/CarlaCheikh.pdf"
+                class="button button-flex"
+              >
                 Download CV <i class="uil uil-import button-icon"></i>
               </a>
             </div>
           </div>
         </div>
-       </section>
-        <!-- Skills -->
-       <section class="skills section" id="skills">
-        <h2 class="section-title">My <span class="header-pink">Skills</span></h2>
+      </section>
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">
+          My <span class="header-pink">Skills</span>
+        </h2>
         <div class="skills-container container grid">
-            <ul class="skills-data">
-              <li class="skill-container">
-              <img src="images/icons/icons8-html5.svg" alt="html-icon" class="skills-icon">
+          <ul class="skills-data">
+            <li class="skill-container">
+              <img
+                src="images/icons/icons8-html5.svg"
+                alt="html-icon"
+                class="skills-icon"
+              />
               <p class="skill-name">Html</p>
             </li>
             <li class="skill-container">
-              <img src="images/icons/icons8-css3.svg" alt="css-icon" class="skills-icon">
+              <img
+                src="images/icons/icons8-css3.svg"
+                alt="css-icon"
+                class="skills-icon"
+              />
               <p class="skill-name">Css</p>
             </li>
-              <li class="skill-container">
-              <img src="images/icons/icons8-javascript.svg" alt="js-icon" class="skills-icon">
-              <p class="skill-name">Javascript</p>
-              </li>
-              <li class="skill-container">
-              <img src="images/icons/icons8-react.svg" alt="react-icon" class="skills-icon">
+            <li class="skill-container">
+              <img
+                src="images/icons/icons8-javascript.svg"
+                alt="js-icon"
+                class="skills-icon"
+              />
+              <p class="skill-name">JavaScript</p>
+            </li>
+            <li class="skill-container">
+              <img
+                src="images/icons/icons8-react.svg"
+                alt="react-icon"
+                class="skills-icon"
+              />
               <p class="skill-name">React</p>
-               </li>
-               <li class="skill-container">
-                <img src="images/icons/icons8-github.svg" alt="github-icon" class="skills-icon">
-                <p class="skill-name">GitHub</p>
-                 </li>
-            </ul>
+            </li>
+            <li class="skill-container">
+              <img
+                src="images/icons/icons8-github.svg"
+                alt="github-icon"
+                class="skills-icon"
+              />
+              <p class="skill-name">GitHub</p>
+            </li>
+          </ul>
         </div>
-       </section>
-       <!-- Projects -->
-       <section class="projects section" id="projects">
-        <h2 class="section-title">My <span class="header-pink">Projects</span></h2>
+      </section>
+      <!-- Projects -->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">
+          My <span class="header-pink">Projects</span>
+        </h2>
         <h3 class="text-project">hover over any project to learn more!</h3>
-          <div class="projects-container container grid">
-            <div class="project first-project" id="project">
-              <img src="images/project-photo-1.avif" alt="project-photo-1" class="project-img">
-              <div class="project-hover first-project-hover hidden" id="project-hover">
+        <div class="projects-container container grid">
+          <div class="project first-project" id="project">
+            <img
+              src="images/project-photo-1.avif"
+              alt="project-photo-1"
+              class="project-img"
+            />
+            <div
+              class="project-hover first-project-hover hidden"
+              id="project-hover"
+            >
               <p class="project-name">Calculator App</p>
               <p class="project-description">A simple calculator</p>
               <div class="project-tools">
                 <span class="tools-name">Html</span>
                 <span class="tools-name">Css</span>
-                <span class="tools-name">Javascript</span>
+                <span class="tools-name">JavaScript</span>
               </div>
               <div class="project-button">
-              <a href="https://carlacheikh.github.io/calculator/" target="_blank" class="button button-flex hover-button">
-                View live 
-              </a>
-              <a href="https://github.com/CarlaCheikh/calculator" target="_blank" class="button button-flex hover-button">
-                GitHub 
-              </a>
-            </div>
+                <a
+                  href="https://carlacheikh.github.io/calculator/"
+                  target="_blank"
+                  class="button button-flex hover-button"
+                >
+                  View live
+                </a>
+                <a
+                  href="https://github.com/CarlaCheikh/calculator"
+                  target="_blank"
+                  class="button button-flex hover-button"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
-            <div class="project second-project" id="project">
-              <img src="images/project-photo-2.avif" alt="project-photo-2" class="project-img">
-              <div class="project-hover second-project-hover hidden" id="project-hover">
+          </div>
+          <div class="project second-project" id="project">
+            <img
+              src="images/project-photo-2.avif"
+              alt="project-photo-2"
+              class="project-img"
+            />
+            <div
+              class="project-hover second-project-hover hidden"
+              id="project-hover"
+            >
               <p class="project-name">Age Calculator App</p>
-              <p class="project-description">An app that calculate the age</p>
+              <p class="project-description">An app that calculate age</p>
               <div class="project-tools">
                 <span class="tools-name">Html</span>
                 <span class="tools-name">Css</span>
-                <span class="tools-name">Javascript</span>
+                <span class="tools-name">JavaScript</span>
               </div>
               <div class="project-button">
-                <a href="https://carlacheikh.github.io/Age-calculator-app/" target="_blank" class="button button-flex hover-button">
-                  View live 
+                <a
+                  href="https://carlacheikh.github.io/Age-calculator-app/"
+                  target="_blank"
+                  class="button button-flex hover-button"
+                >
+                  View live
                 </a>
-                <a href="https://github.com/CarlaCheikh/Age-calculator-app" target="_blank"  class="button button-flex hover-button">
-                  GitHub 
+                <a
+                  href="https://github.com/CarlaCheikh/Age-calculator-app"
+                  target="_blank"
+                  class="button button-flex hover-button"
+                >
+                  GitHub
                 </a>
               </div>
             </div>
-            </div>
           </div>
-       </section>
-       <!-- Contact -->
-       <section class="contact section" id="contact">
-        <h2 class="section-title">Get in <span class="header-pink">touch</span></h2>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">
+          Get in <span class="header-pink">touch</span>
+        </h2>
         <div class="contact-container container flex">
           <div class="contact-info">
-
             <div class="phone contact-info-box">
               <i class="uil uil-phone contact-icon"></i>
-              <a href="tel:+96181283291" class="phone-number">
-                +96181283291
-              </a>
+              <a href="tel:+96181283291" class="phone-number"> +96181283291 </a>
             </div>
             <div class="location contact-info-box">
               <i class="uil uil-map-marker contact-icon"></i>
@@ -216,39 +304,72 @@
                 carlacheikh13@gmail.com
               </a>
             </div>
-         
-           <div class="contact-social">
-             <a href="https://github.com/CarlaCheikh" target="_blank" class="contact-social-icon">
-             <i class="uil uil-github-alt"></i>
-             </a>
-             <a href="https://www.linkedin.com/in/carla-cheikh" target="_blank" class="contact-social-icon">
-             <i class="uil uil-linkedin-alt"></i>
-             </a>
-             <a href="https://instagram.com/carla_cheikh?igshid=MjEwN2IyYWYwYw==" target="_blank" class="contact-social-icon">
-             <i class="uil uil-instagram"></i>
-             </a>
-           </div>
-          </div>
-        <form action="thankyou/thanks" method="post" name="contact" class="contact-form"> 
-           <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required>
-           <input type="email" name="email" id="email" placeholder="email" required>
-           <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="message" required></textarea>
-           <button type="submit" class="button submit-button">
-            <span class="button-flex">
-            Message me
-            <i class="uil uil-message button-icon"></i>
-          </span>
-           </button>
-        </form>
-      </div>
-       </section>
-    </main>
-     <!--Footer -->
-    <footer class="footer" id="footer">
-       <p class="footer-content">Copyright &copy; 2023.All Rights Reserved By Carla Cheikh</p>
-    </footer>
-    <script src="index.js">
 
-    </script>
-</body>
+            <div class="contact-social">
+              <a
+                href="https://github.com/CarlaCheikh"
+                target="_blank"
+                class="contact-social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/carla-cheikh"
+                target="_blank"
+                class="contact-social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://instagram.com/carla_cheikh?igshid=MjEwN2IyYWYwYw=="
+                target="_blank"
+                class="contact-social-icon"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <form method="post" name="contact" class="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="message"
+              required
+            ></textarea>
+            <button type="submit" class="button submit-button">
+              <span class="button-flex">
+                Message me
+                <i class="uil uil-message button-icon"></i>
+              </span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--Footer -->
+    <footer class="footer" id="footer">
+      <p class="footer-content">
+        Copyright &copy; 2023. All Rights Reserved By Carla Cheikh.
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
