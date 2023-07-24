@@ -620,10 +620,6 @@ textarea:focus {
   .submit-button {
     width: 54%;
   }
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-  }
   .contact-social {
     margin-bottom: 2rem;
   }
@@ -685,11 +681,6 @@ textarea:focus {
   .button {
     padding: 0.75rem 1rem;
   }
-  .contact-icon {
-    width: 42px;
-    height: 42px;
-  }
-
   .contact .flex {
     align-items: flex-start;
     justify-content: space-between;
